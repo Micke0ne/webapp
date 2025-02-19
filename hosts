@@ -1,0 +1,11 @@
+# hosts 
+
+[Mysql]
+srv-mysql-01 ansible_host=192.168.113.164 # IP de votre hôte
+
+[Web]
+srv-web-01 ansible_host=192.168.113.163 # IP de votre hôte
+
+[local]
+control ansible_connection=local
+

@@ -1,0 +1,12 @@
+---
+all:
+  vars:
+    ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
+    ansible_python_interpreter: /usr/bin/python3.12 
+  hosts:
+    control:
+      ansible_connection: local
+prod:
+  hosts:
+    srv-web-01:
+       ansible_host: 192.168.113.163 # A remplacer par l'IP de votre client
